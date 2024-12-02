@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void convert() {
     if (inputController.text.isEmpty || fromUnit == null || toUnit == null) {
       setState(() {
-        result = "⚠️ Please fill in all fields!";
+        result = " Please fill in all fields!";
       });
       return;
     }
@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     if (conversionResult == null) {
       setState(() {
-        result = "❌ Invalid conversion!";
+        result = " Invalid conversion!";
       });
       return;
     }
